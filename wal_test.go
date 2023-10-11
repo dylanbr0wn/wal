@@ -8,9 +8,9 @@ import (
 
 func Test_WAL(t *testing.T) {
 	config := &Config{
-		maxSegmentSize: 1024 * 1024,
-		root:           "./wal",
-		fileName:       "wal",
+		maxLogSize: 1024 * 1024 * 5,
+		root:       "./wal",
+		fileName:   "wal",
 	}
 
 	t.Run("Single Line", func(t *testing.T) {
